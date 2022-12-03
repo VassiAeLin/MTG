@@ -49,6 +49,5 @@ class Game:
             exit(1)
 
         self._launching()
-        self.player.list()
 
         # self.put_mana()

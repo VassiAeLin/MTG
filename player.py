@@ -18,33 +18,29 @@ class NonPlayer(abc.ABC):
         self.cards.append(card)
         return print(card)
 
-    def list(self):
-        for i in self.cards:
-            print(self.cards[i])
-
-    @abc.abstractmethod
-    def change_mana(self):
-        pass
+    # def change_mana(self):
+    #     pass
 
 class Player(NonPlayer):
-    
-    def change_mana(self):
-        for i in self.cards:
-            if i == deck.Mana():
-                value = input("Хотите положить ману?(y/n) ")
-                if value == 'y': 
-                    self.mana +=1
-                    self.cards.pop(i)
-                    for j in self.cards:
-                        print(self.cards[j])
-                        break
-                if value == 'n':
-                    break
+    pass
+    # def change_mana(self):
+    #     for i in self.cards:
+    #         if i == deck.Mana():
+    #             value = input("Хотите положить ману?(y/n) ")
+    #             if value == 'y': 
+    #                 self.mana +=1
+    #                 self.cards.pop(i)
+    #                 for j in self.cards:
+    #                     print(self.cards[j])
+    #                     break
+    #             if value == 'n':
+    #                 break
 
 
 class Bot(NonPlayer):
-    def change_mana(self):
-        for i in self.cards:
-            if i == deck.Mana():
-                self.mana +=1
-                break
+    pass
+    # def change_mana(self):
+    #     for i in self.cards:
+    #         if i == deck.Mana():
+    #             self.mana +=1
+    #             break
